@@ -1,0 +1,19 @@
+package com.designPatern.CreationalDesignPatterns.Singleton;
+
+public class LazyInitialized {
+
+	// create variable of class type
+	private static LazyInitialized instance;
+
+	// private constractor try to protect unessary object creation
+	private LazyInitialized() {
+
+	}
+     //create instance in public piblic method 
+	public LazyInitialized getInstance() {
+		if (instance == null) {
+			instance = new LazyInitialized();
+		}
+		return instance;
+	}
+}
