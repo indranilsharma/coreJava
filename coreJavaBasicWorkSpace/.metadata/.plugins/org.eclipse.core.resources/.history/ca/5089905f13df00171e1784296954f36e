@@ -1,0 +1,24 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.datatype.primitive.numaric.integer;
+
+/**
+ *
+ * @author root
+ */
+public class Manager3 {
+    public static void main(String[] args) {
+    int i;//declare
+    i=20;//assign
+    System.out.println(i);
+    int j=50;
+    j=i;//overrride
+    System.out.println(i);
+    System.out.println(j);
+    
+  }
+    
+}

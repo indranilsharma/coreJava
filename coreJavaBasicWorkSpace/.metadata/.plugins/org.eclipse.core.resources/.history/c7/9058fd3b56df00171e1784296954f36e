@@ -1,0 +1,21 @@
+package com.classesMethodsVariable.MemberVariable;
+
+/*Field variables of object types and the elements of 
+arrays of object types are automatically initialized to the null value*/
+
+public class Manager3 {
+	public static void main(String[] argv) {
+		MyClass myClass = new MyClass();
+		for (float f : myClass.localVariables) {
+			System.out.println(f);
+		}
+
+	}
+}
+
+class MyClass {
+	public float[] localVariables = new float[3];
+
+	public MyClass() {
+	}
+}

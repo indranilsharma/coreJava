@@ -1,0 +1,10 @@
+package com.statement.loop;
+
+public class Manager11 {
+	 public static void main(String[] argv){
+	        for (int i = 0,j = 0; (i<10) || (j<20); i++, j++) {
+	          System.out.println("i is " + i + " j is " +j);
+	        }
+	        System.out.println();
+	    }
+}

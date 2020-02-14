@@ -1,0 +1,31 @@
+/*
+|	Bitwise OR
+&	Bitwise AND
+~	Bitwise Complement
+^	Bitwise XOR
+<<	Left Shift
+>>	Right Shift
+>>>	Unsigned Right Shift*/
+
+
+package com.operators.bitwiseOperator;
+
+/*
+12 = 00001100 (In Binary)
+25 = 00011001 (In Binary)
+
+Bitwise OR Operation of 12 and 25
+  00001100
+| 00011001
+  ________
+  00011101  = 29 (In decimal)
+  */
+
+public class BitwiseOR {
+	public static void main(String[] args) {
+
+		int number1 = 4, number2 = 5, result;
+		result = number1 | number2;
+		System.out.println(result);
+	}
+}

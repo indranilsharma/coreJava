@@ -1,0 +1,17 @@
+/*
+ Exception in thread "main" java.lang.ArithmeticException: / by zero*/
+package com.operators.arithmaticOperators;
+
+/**
+ *
+ * @author root
+ */
+public class Manager2 {
+    public static void main(String[] argv){
+       int i = -9;
+       int j = 0;
+       int z = i/j;//arithmetic exception
+       System.out.println(z);
+
+    }
+}

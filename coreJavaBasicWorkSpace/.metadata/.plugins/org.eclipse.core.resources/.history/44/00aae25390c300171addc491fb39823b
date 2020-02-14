@@ -1,0 +1,12 @@
+package com.JavaLang.roundingFunctions;
+
+public class Manager2 {
+	public static void main(String[] args) {
+		double x = 3.14;
+
+		int y = (int) Math.abs(x);
+		System.out.println(y);
+
+	}
+
+}

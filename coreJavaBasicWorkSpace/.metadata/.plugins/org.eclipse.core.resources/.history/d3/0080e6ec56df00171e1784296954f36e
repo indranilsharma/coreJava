@@ -1,0 +1,13 @@
+package com.classesMethodsVariable.Variable.instanceVariable;
+
+/*Field variables are variables that are declared as members of a class. 
+Field variables are variables that are declared as members of a class. 
+*/
+
+public class Manager2 {
+	private int fieldVariable;
+
+	public static void main(String[] argv) {
+		int localVariable = 0;
+	}
+}

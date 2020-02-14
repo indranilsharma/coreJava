@@ -1,0 +1,13 @@
+
+package com.operators.assignmentOperator;
+
+/**
+ *
+ * @author root
+ */
+public class Manager9 {
+	public static void main(String args[]) {
+		// int x = y = z = 20;
+
+	}
+}

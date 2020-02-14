@@ -1,0 +1,53 @@
+package com.allKeyword.IIB;
+
+class Manager12 {
+
+	Manager12(int i) {
+		System.out.println("Manager12(int)");
+	}
+
+	{
+		System.out.println("Manager12-IIb");
+	}
+
+	Manager12(int i, int j) {
+		this(j);
+		System.out.println("Manager-12(int,int)");
+	}
+}
+
+public class Manager11 extends Manager12 {
+
+	public Manager11() {
+		super(10, 20);
+		System.out.println("Manager11(int,int)");
+	}
+
+	{
+		System.out.println("Manager11-IIB");
+	}
+
+	Manager11(int i) {
+		this();
+		System.out.println("Manager11(int)");
+	}
+
+	Manager11(double i) {
+		super(10);
+		System.out.println("Manager11(double)");
+	}
+
+	public static void main(String[] args) {
+		Manager12 obj = new Manager12(10);
+		System.out.println(".....");
+		Manager12 obj1 = new Manager12(20, 4);
+		System.out.println("......");
+		Manager11 obj2 = new Manager11();
+		System.out.println("......");
+		Manager11 obj3 = new Manager11(30);
+		System.out.println("......");
+		Manager11 obj4 = new Manager11(1.0);
+		System.out.println(".......");
+
+	}
+}

@@ -1,0 +1,23 @@
+package com.classesMethodsVariable.Variable.localVariable;
+
+/*
+Local variable has its scope limited to the method who declares it : Method Variable
+*/
+
+public class Manager3 {
+	public void logIn() {
+		int count = 10;
+		System.out.println(count);
+	}
+
+	public void doSomething(int i) {
+		// count = i; // Won't compile! Can't access count outside
+		 System.out.println(i);
+	}
+
+	public static void main(String[] args) {
+		Manager3 manager3 = new Manager3();
+		manager3.logIn();
+		manager3.doSomething(0);
+	}
+}

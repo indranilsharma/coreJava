@@ -1,0 +1,21 @@
+/*
+ Java does not permit you to cast any type to boolean* and open the template in the editor.
+ */
+package com.operators.booleanOperators;
+
+/**
+A         B             A|B       A&B      A^B      !A
+false     false         false     false    false    true
+true      false         true      false    true     false
+false     true          true      false    true     true
+true      true          true      true     false    false
+ */
+public class Manager4 {
+    public static void main(String[] argv) {
+    int i = 0;
+    boolean b = true;
+   /* if (i & b) {//The operator & is undefined for the argument type(s) int, boolean
+      System.out.println("true");
+    }*/
+  }
+}

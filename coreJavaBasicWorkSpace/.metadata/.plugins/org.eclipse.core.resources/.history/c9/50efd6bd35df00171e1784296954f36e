@@ -1,0 +1,12 @@
+package com.datatype.array;
+
+class Manager5i {
+	public static void main(String[] argv) {
+		long[] squares;
+		squares = new long[6000];
+		for (int i = 0; i < 6000; i++) {
+			squares[i] = i * i;
+			System.out.print(i+"="+squares[i]+" ");
+		}
+	}
+}

@@ -1,0 +1,15 @@
+
+package com.operators.bitwiseOperator;
+
+/**
+ *
+ * @author root
+ */
+public class Manager1 {
+    public static void main(String[] argv) {
+    System.out.println(~3);
+    System.out.println(3 & 4);
+    System.out.println(3 | 4);
+    System.out.println(5 ^ 4);
+  }
+}

@@ -1,0 +1,13 @@
+package com.JavaLang.roundingFunctions;
+
+public class Manager4 {
+    public static void main(String args[]) {
+
+        double x = 3.14;  
+
+        int y = (int) Math.floor(x);
+
+        System.out.print(y);
+
+   }
+}

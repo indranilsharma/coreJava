@@ -1,0 +1,12 @@
+package com.JavaLang.roundingFunctions;
+
+public class Manager8 {
+	public static void main(String args[]) {
+
+        double z = Math.random();
+        int y = (int) z;
+
+        System.out.print(y);
+
+    }
+}

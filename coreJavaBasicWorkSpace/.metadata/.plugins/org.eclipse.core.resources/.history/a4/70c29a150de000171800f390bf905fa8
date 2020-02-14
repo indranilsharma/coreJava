@@ -1,0 +1,17 @@
+
+/*
+|	Bitwise OR
+&	Bitwise AND
+~	Bitwise Complement
+^	Bitwise XOR
+<<	Left Shift
+>>	Right Shift
+>>>	Unsigned Right Shift*/
+
+package com.operators.bitwiseOperator;
+
+public class BitwiseAND {
+public static void main(String[] args) {
+	
+}
+}

@@ -1,0 +1,20 @@
+/*
+ Float and Double classes define MAX_VALUE,
+ MIN_VALUE, POSITIVE_INFINITY, and NEGATIVE_INFINITY.
+ */
+package com.datatype.primitive.numaric.floating;
+
+/**
+ *
+ * @author root
+ */
+public class Manager21 {
+     public static void main(String[] argv) {
+    System.out.println(Float.MAX_VALUE);
+    System.out.println(Double.MAX_VALUE);
+    System.out.println(Float.MIN_VALUE);
+    System.out.println(Double.MIN_VALUE);
+    System.out.println(Float.NEGATIVE_INFINITY);
+    System.out.println(Double.POSITIVE_INFINITY);
+  }
+}

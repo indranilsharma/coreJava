@@ -1,0 +1,19 @@
+package com.JavaLang.roundingFunctions;
+
+/*
+* The class {@code Math} contains methods for performing basic
+* numeric operations such as the elementary exponential, logarithm,
+* square root, and trigonometric functions.
+* 
+*/
+
+public class Manager2 {
+	public static void main(String[] args) {
+		double x = 3.14;
+
+		int y = (int) Math.abs(x);
+		System.out.println(y);
+
+	}
+
+}

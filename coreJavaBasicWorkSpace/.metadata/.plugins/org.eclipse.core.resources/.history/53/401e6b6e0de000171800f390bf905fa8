@@ -1,0 +1,25 @@
+
+/*
+|	Bitwise OR
+&	Bitwise AND
+~	Bitwise Complement
+^	Bitwise XOR
+<<	Left Shift
+>>	Right Shift
+>>>	Unsigned Right Shift*/
+
+package com.operators.bitwiseOperator;
+
+/*35 = 00100011 (In Binary)
+
+Bitwise complement Operation of 35
+~ 00100011 
+  ________
+  11011100  = 220 (In decimal)*/
+
+public class Complement {
+	int number = 35, result;
+
+	result=~number;System.out.println(result);
+  }
+}

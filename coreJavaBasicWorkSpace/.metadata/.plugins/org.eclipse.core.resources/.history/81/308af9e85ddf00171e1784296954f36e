@@ -1,0 +1,32 @@
+package com.classesMethodsVariable.Variable.staticVariable;
+/**
+ *
+ * @author root
+ */
+public class Manager5 {
+
+    static int i = 10;
+    static int j;
+    static int k ;
+    static  int m;
+
+    public static void main(String[] args) {
+        int i = 20;
+        System.out.println("local i:" + i);
+        System.out.println("static i:" + Manager5.i);
+        System.out.println("static j:" + j);
+        Manager5.j = 1000;
+        System.out.println("local.j  :" + j);//used before initilised
+
+        System.out.println(k);// i and i diffarent 
+        k = 88;
+        System.out.println(k);
+        System.out.println(Manager5.k);
+  
+        System.out.println(m);// i and i diffarent 
+        int m = 4488;//m and local m are diffrent 
+        System.out.println(m);
+        System.out.println(Manager5.m);
+    }
+
+}

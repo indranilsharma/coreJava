@@ -1,0 +1,23 @@
+package com.classesMethodsVariable.MethodVariable;
+
+/*Shadow an instance variable by declaring a local 
+variable of the same name directly or as part of an argument
+*/
+
+public class Manager7 {
+
+	static int size = 7;
+
+	static void changeIt(int size) {
+		size = size + 200;
+		System.out.println("size in changeIt is " + size);
+	}
+
+	public static void main(String[] args) {
+		Manager7 f = new Manager7();
+		System.out.println("size = " + size);
+		changeIt(size);
+		System.out.println("size after changeIt is " + size);
+	}
+
+}

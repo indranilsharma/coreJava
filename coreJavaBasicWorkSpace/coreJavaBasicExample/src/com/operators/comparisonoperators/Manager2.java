@@ -1,0 +1,23 @@
+package com.operators.comparisonoperators;
+
+/**
+ *
+ * @author root
+ */
+public class Manager2 {
+    public static void main(String[] argv) {
+
+    int a = 9;
+    int b = 65;
+    int c = -12;
+    float d = 9.0F;
+    char e = 'A';
+
+    System.out.println(a < b);//both int
+    System.out.println(d < c);//float and int but both from numaric class
+    System.out.println(e > a);//convert to ascii of "A"
+    System.out.println(a > d);//
+    System.out.println(c >= e);//convert to ascii of "A"
+  }
+
+}

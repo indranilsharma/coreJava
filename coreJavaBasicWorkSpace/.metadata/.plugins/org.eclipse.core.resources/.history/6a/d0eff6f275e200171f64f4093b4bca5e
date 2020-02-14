@@ -1,0 +1,11 @@
+package com.statement.loop;
+
+public class Manager12 {
+	public static void main(String[] argv){
+        int b = 3;
+        for (int a = 1;  b != 1; System.out.println("iterate")) {
+          //b = b - a;
+          b--;
+        }
+    }
+}

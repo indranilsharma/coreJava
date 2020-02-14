@@ -1,0 +1,25 @@
+/*
+ & non-short-circuit AND
+| non-short-circuit OR*/
+package com.operators.booleanOperators;
+
+/**
+A         B             A|B       A&B      A^B      !A
+false     false         false     false    false    true
+true      false         true      false    true     false
+false     true          true      false    true     true
+true      true          true      true     false    false
+ */
+public class Manager3 {
+    public static void main(String[] argv){
+        int z = 5;
+        if(++z > 5 || ++z > 6) z++;   // z = 7 after this code
+        System.out.println(z);
+        //versus:
+        
+         z = 5;
+        if(++z > 5 | ++z > 6) z++;   // z = 8 after this code
+
+        System.out.println(z);
+    }
+}

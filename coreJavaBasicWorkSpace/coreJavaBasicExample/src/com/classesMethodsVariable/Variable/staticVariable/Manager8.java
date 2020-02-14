@@ -1,0 +1,24 @@
+package com.classesMethodsVariable.Variable.staticVariable;
+
+/*Shadow an instance variable by declaring a local 
+variable of the same name directly or as part of an argument
+*/
+
+public class Manager8 {
+
+	static int size = 7;
+
+	static void changeIt(int size) {
+		size = size + 200;
+		System.out.println("size in changeIt is " + size);
+	}
+
+	public static void main(String[] args) {
+		Manager8 f = new Manager8();
+		System.out.println("size = " + size);//without class name we can call
+		changeIt(Manager8.size);////with class name we can call
+		System.out.println("size after changeIt is " + size);//static access
+		
+	}
+
+}

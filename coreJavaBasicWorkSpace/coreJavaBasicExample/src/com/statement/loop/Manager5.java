@@ -1,0 +1,21 @@
+package com.statement.loop;
+
+public class Manager5 {
+	public static void main(String[] argv) {
+		int i = 7;
+
+		int j = 7;
+
+		for (i++, /* int */ j = 0; i < 10; j++) {
+		}   // int should be first statement illegal!
+
+		/*
+		 * for (int i = 7, j = 0; i<10 & j < 10; j++) { //loop will not
+		 * terminate System.out.println("i :"+i+" j:"+j); }
+		 */
+
+		for (int k = 0; k < 10; k++) {
+			System.out.println(k);
+		}
+	}
+}
