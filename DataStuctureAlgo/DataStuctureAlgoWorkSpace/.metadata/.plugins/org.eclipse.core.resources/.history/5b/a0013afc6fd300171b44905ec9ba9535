@@ -1,0 +1,23 @@
+package com.dataStucture.ElementaryDataStructures.array.rotation;
+
+/*
+Input arr[] = [1, 2, 3, 4, 5, 6, 7]
+out put arr[] = [3, 4, 5, 6, 7, 1, 2]
+we are going to follow rotate the are with the help of temp array who's size is 2
+*/
+
+public class RotateArray {
+	public static String rotateArrayWithTempArray(Integer array[],int tempSize) {
+		for (int i = tempSize; i < array.length; i++) {
+			int j = array[i];
+			System.out.print(j+" ");
+		}
+		return "";
+	}
+	
+	public static void main(String[] args) {
+		Integer array [] = {1,2,3,4,5,6,7 };
+		int tempSize = 2;
+		rotateArrayWithTempArray(array, tempSize);
+	}
+}

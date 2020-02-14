@@ -1,0 +1,11 @@
+package com.dataStucture.strings.CharacterCounting;
+
+public class GetMaxOccuringChar {
+	public void getmaxOccuringChar() {
+
+	}
+
+	public static void main(String[] args) {
+     String inputString = "India Will became superpower as per theNeken";
+	}
+}
