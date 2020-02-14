@@ -1,0 +1,12 @@
+package com.java8newfeature.common.consumerInterface;
+
+public class Test {
+	public static void main(String[] args) {
+        int a = 20,b=40;
+		
+        add(a,(a, b)->{});
+	}
+
+	static void add(int a) {
+	}
+}

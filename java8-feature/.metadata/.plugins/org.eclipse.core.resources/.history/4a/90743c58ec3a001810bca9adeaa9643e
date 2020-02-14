@@ -1,0 +1,20 @@
+package com.java8newfeature.common.funtinalInterface;
+
+@FunctionalInterface
+interface FuntinalInterfaceObjectClass {
+
+	void sam();
+
+	boolean equals(Object object);
+
+	int hashCode();
+}
+
+public class FuntinalInterfaceSAMObjectClass implements FuntinalInterfaceObjectClass {
+
+	@Override
+	public void sam() {
+		System.out.println("SAM - implemented");
+	}
+
+}

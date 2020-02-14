@@ -1,0 +1,9 @@
+package com.java8newfeature.common.streamApI;
+
+public class StreamFilterAndIterating {
+
+	public static void main(String[] args) {
+
+	}
+
+}

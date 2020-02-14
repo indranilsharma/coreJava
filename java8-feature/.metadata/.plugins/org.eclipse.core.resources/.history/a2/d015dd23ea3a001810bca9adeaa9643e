@@ -1,0 +1,20 @@
+package com.java8newfeature.common.funtinalInterface;
+
+@FunctionalInterface
+interface FuntinalInterfaceDemoConcreat {
+	void sam();
+}
+
+public class FuntinalInterfaceSAMConcreat implements FuntinalInterfaceDemo {
+
+	@Override
+	public void sam() {
+		System.out.println("SAM - Implemented");
+	}
+
+	public static void main(String[] args) {
+		FuntinalInterfaceSAMConcreat samObj = new FuntinalInterfaceSAMConcreat();
+		samObj.sam();
+	}
+
+}

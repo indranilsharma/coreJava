@@ -1,0 +1,20 @@
+package com.java8newfeature.common.lamdaExpretion;
+
+interface Parameter {
+	void noparam();
+
+	/*int oneparam(int a);
+
+	int twoparam();
+
+	String twoparamString();*/
+
+}
+
+public class LamdaExParameterTest {
+	public static void main(String[] args) {
+     // Parameter p = ()->{};
+      //p.noparam();
+      Parameter p = (i)->{return syso;}
+	}
+}

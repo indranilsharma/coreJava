@@ -1,0 +1,17 @@
+package com.java8newfeature.common.lamdaExpretion;
+
+interface Demo {
+	public void show();
+}
+
+public class LamdaExpretionNoParam {
+
+	public static void main(String[] args) {
+		Demo demo = () -> {
+
+			//System.out.println("I ");
+		};
+	     System.out.println(demo.show());
+	}
+
+}

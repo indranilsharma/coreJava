@@ -1,0 +1,23 @@
+package com.java8newfeature.common.dateTimeAPI;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.ZoneId;
+
+public class DateTimeDemo {
+public static void main(String[] args) {
+	LocalDate date =LocalDate.now();
+	System.out.println(date);
+	
+	LocalTime time =LocalTime.now();
+	System.out.println(time);
+	
+	
+	LocalTime time2 = LocalTime.now(ZoneId.of(""));
+	
+	for (String string : ZoneId.getAvailableZoneIds()) {
+		System.out.println(string);
+	}
+	
+}
+}

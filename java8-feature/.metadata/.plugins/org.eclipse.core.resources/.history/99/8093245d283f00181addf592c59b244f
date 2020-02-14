@@ -1,0 +1,20 @@
+package com.java8newfeature.common.lamdaExpretion;
+
+public class LamdaRunnable {
+	public static void main(String[] args) {
+	
+		Thread myThreadAnonamuos = new Thread(new Runnable() {
+
+			public void run() {
+				System.out.println("myThread implemented via anonamous innerclass");
+			}
+		});
+
+		myThreadAnonamuos.start();
+
+		Thread myThreadLamda = new Thread(
+				() -> System.out.println("myThread implemented via"
+						+ " lamda thats why 'new Runnale() boiler plate code also remove'"));
+		myThreadLamda.start();
+	}
+}

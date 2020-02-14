@@ -1,0 +1,16 @@
+package com.java8newfeature.common.lamdaExpretion;
+
+interface Demo {
+	void show();
+}
+
+public class LamdaExpretionNoParam implements Demo {
+	Demo demo = new Demo() {
+
+		@Override
+		void show() {
+			System.out.println("I am  implemented");
+		}
+	};
+
+}

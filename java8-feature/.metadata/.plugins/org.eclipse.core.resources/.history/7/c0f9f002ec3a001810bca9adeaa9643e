@@ -1,0 +1,11 @@
+package com.java8newfeature.common.funtinalInterface;
+
+interface FuntinalInterfaceObjectClass {
+	void sam();
+
+	boolean equals(Object object);
+}
+
+public class FuntinalInterfaceSAMObjectClass {
+
+}

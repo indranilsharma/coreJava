@@ -1,0 +1,10 @@
+package com.java8newfeature.common.foreachMethod;
+
+public class ForeachMethodDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

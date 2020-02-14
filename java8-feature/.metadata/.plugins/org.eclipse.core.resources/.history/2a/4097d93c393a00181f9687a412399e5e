@@ -1,0 +1,26 @@
+package com.java8newfeature.common.interfaceDemo;
+
+abstract class AbstractClass {
+	public AbstractClass() {
+		System.out.println("i am costarctor that is why i am defarent from interface");
+	}
+
+	void iamConcreate() {
+		System.out.println("I am non abstract method");
+	}
+
+	abstract void iamAbstract();
+
+	static void inStatic() {
+		System.out.println("i am static");
+	}
+}
+
+public class AbstractDefarence extends AbstractClass {
+
+	@Override
+	void iamAbstract() {
+		System.out.println(" i am abstract method that is manatory to implement");
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.java8newfeature.common.lamdaExpretion;
+
+interface A {
+	void show();
+}
+
+class Middle implements A {
+
+	@Override
+	public void show() {
+
+	}
+}
+
+public class LamdaWithOut extends  Middle{
+ A obj; 
+ LamdaWithOut obj =  new LamdaWithOut();
+ obj
+}

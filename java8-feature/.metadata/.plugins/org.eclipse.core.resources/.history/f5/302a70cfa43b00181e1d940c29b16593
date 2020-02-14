@@ -1,0 +1,18 @@
+package com.java8newfeature.common.lamdaExpretion;
+
+interface Parameter {
+	void noparam();
+
+	int oneparam();
+
+	int twoparam();
+
+	String twoparamString();
+
+}
+
+public class LamdaExParameterTest {
+	public static void main(String[] args) {
+      Parameter 
+	}
+}

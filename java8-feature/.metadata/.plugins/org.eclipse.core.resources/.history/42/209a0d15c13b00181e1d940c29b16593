@@ -1,0 +1,7 @@
+package com.java8newfeature.common.methodrefarence;
+
+//call by value
+//call by method
+public class Methodrefarence {
+
+}

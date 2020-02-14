@@ -1,0 +1,17 @@
+package com.java8newfeature.common.methodrefarence;
+
+@FunctionalInterface
+interface functinalDemo {
+	void abstractMetod();
+
+	public static void show() {
+		System.out.println("i am static show()");
+	}
+}
+
+public class MethodrefarenceStatic {
+
+	public static void main(String[] args) {
+		functinalDemo obj = functinalDemo::show;
+	}
+}

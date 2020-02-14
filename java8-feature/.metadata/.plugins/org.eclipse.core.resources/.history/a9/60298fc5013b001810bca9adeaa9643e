@@ -1,0 +1,9 @@
+package com.java8newfeature.common.lamdaExpretion;
+
+interface Demo {
+	void show();
+}
+
+public class LamdaExpretionNoParam implements Demo {
+
+}

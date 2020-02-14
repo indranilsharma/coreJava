@@ -1,0 +1,34 @@
+package com.java8newfeature.common.lamdaExpretion;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class LamdaWithComparator {
+	public static void main(String[] args) {
+		List<Person> persons = Arrays.asList(new Person("ram", "ragubir", 40), new Person("arjun", "pandab", 50),
+				new Person("jhon", "frandadis", 20));
+
+		//using anonamous inner class
+		Collections.sort(persons, new Comparator<Person>() {
+
+			@Override
+			public int compare(Person o1, Person o2) {
+				return o1.getFirstName().compareTo(o2.getFirstName());
+			}
+		});
+
+		for (Person p : persons) {
+			System.out.println(p.getFirstName() + " " + p.getLastName() + " " + p.getAge());
+		}
+
+		//Using lamda
+		Collections.sort(persons,(p1,p2)->{
+			return p1.getFirstName().compareTo(p2.getFirstName());
+		});
+		
+		
+		
+	}
+}
