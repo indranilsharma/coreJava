@@ -1,0 +1,27 @@
+package com.JavaLang.equals;
+class Customer {
+	String name;
+	int demo_no;
+	int amt;
+
+	public Customer(String name, int demo_no, int amt) {
+		this.name = name;
+		this.demo_no = demo_no;
+		this.amt = amt;
+	}
+	
+}
+public class EqualsDemo {
+
+	public static void main(String[] args) {
+		
+		Customer c1 = new Customer("Indranil", 101, 20000);
+		Customer c2 = new Customer("Indranil", 101, 20000);
+		Customer c3 = new Customer("Rockey", 1001, 50000);
+		
+		System.out.println(c1.equals(c2));
+		System.out.println(c1.equals(c3));
+		
+	}
+
+}

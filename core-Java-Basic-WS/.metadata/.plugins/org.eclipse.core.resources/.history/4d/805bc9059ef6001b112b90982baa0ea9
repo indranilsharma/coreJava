@@ -1,0 +1,28 @@
+package com.CollectionAPI.CollectionFramework.generics;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class LowerBoundedWildcard {
+
+	public static void main(String[] args) {
+
+		ArrayList<Integer> al = new ArrayList<Integer>(Arrays.asList(12, 55, 7848));
+		printList(al);
+		
+		ArrayList<Double> al1 = new ArrayList<Double>(Arrays.asList(1.2, 5.5, 78.48));
+	
+//		it not allowed bcz Double is not super class of Integer here only permisible object type
+//		printList(al1);
+
+//		only applicable object type 
+		ArrayList<Object> al2 = new ArrayList<Object>();
+		printList(al2);
+	}
+
+	public static void printList(List<? super Integer> list) {
+		System.out.println(list);
+	}
+
+}

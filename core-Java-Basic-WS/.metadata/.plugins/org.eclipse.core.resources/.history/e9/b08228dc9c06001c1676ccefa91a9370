@@ -1,0 +1,23 @@
+package com.datatype.Literal.string.StingBuffer;
+
+public class StringBufferDemo2 {
+
+	public static void main(String[] args) {
+		final StringBuffer sb = new StringBuffer("India");
+
+//		even though final we can change in the same object 
+//		but not in the reassignment  
+
+//		sb.append("Taliban");
+		System.out.println(sb);
+
+//		The final local variable sb cannot be assigned.
+//		It must be blank and not using a compound assignment
+//		sb = new StringBuffer("Not possible");
+		
+//		default capacity 16--upto this we add 16 char
+//		sb.append("abcd-efghijk");
+		System.out.println(sb);
+		System.out.println(sb.capacity());
+	}
+}

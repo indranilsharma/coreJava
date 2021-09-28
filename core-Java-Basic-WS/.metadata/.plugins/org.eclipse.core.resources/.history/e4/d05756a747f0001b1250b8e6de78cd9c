@@ -1,0 +1,39 @@
+package com.CollectionAPI.CollectionFramework.Iterators.Enumeration;
+
+import java.util.Enumeration;
+import java.util.Vector;
+
+public class Enumeration_Demo1 {
+
+	public static void main(String[] args) {
+
+		Vector<Object> vec = new Vector<>();
+
+		vec.add("A");
+		vec.add("B");
+		vec.add("C");
+		vec.add("D");
+		vec.add("E");
+		vec.add("F");
+		vec.add("G");
+
+		for (int i = 0; i < 10; i++) {
+			vec.add(i);
+		}
+
+		System.out.println(vec);
+
+		// Retrieval done by Enumeration
+		Enumeration<Object> e = vec.elements();
+
+		while (e.hasMoreElements()) {
+
+			System.out.println("Enumeration " + e.nextElement());
+		}
+
+		// Retrieval done by get()
+		for (int i = 0; i < vec.size(); i++) {
+			System.out.println("get " + vec.get(i));
+		}
+	}
+}

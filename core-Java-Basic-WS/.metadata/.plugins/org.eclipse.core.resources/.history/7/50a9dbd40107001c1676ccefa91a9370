@@ -1,0 +1,8 @@
+package com.datatype.Literal.string.StringObject;
+
+public class StringConstantPool3 {
+
+	public static void main(String[] args) {
+		
+	}
+}

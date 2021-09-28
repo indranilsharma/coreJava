@@ -1,0 +1,22 @@
+package com.CollectionAPI.CollectionFramework.list.arrayList;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+public class SynchonisedArrrayList {
+
+	public static void main(String[] args) {
+
+		ArrayList<Object> al = new ArrayList<>();
+		List<Object> l = Collections.synchronizedList(al);
+//		Set<Object> s1 = new HashSet();
+		Set<Object> s = Collections.synchronizedSet(new HashSet<Object>());
+		Map<Integer,Object> m = Collections.synchronizedMap(new HashMap());
+	}
+
+}

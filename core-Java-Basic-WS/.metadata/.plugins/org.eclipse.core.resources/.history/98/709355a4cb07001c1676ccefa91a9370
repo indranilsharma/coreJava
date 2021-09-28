@@ -1,0 +1,27 @@
+package com.datatype.Literal.string.OCAJP_String;
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+//1---		---MUTIBILITY-------
+		String s = new String("Kasmir");
+//		automatically applicable for garbage collection
+//		 new object("KasmirHeaven") will be created so immutable(unchangeable)
+		s.concat("Heaven");
+		System.out.println(s);
+
+//1---		---MUTIBILITY-------
+		StringBuffer sb = new StringBuffer("Kasmir");
+//		operate on a same object--no new object will be created--so mutable(changeable)
+		sb.append("Heaven");
+		System.out.println(sb);
+		
+//		e
+		String s1 = new String("Anada");
+		String s2 = new String("Desh");
+		System.out.println(s1 == s2);
+		System.out.println(s1.equals(s2));
+
+	}
+}

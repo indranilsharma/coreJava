@@ -1,0 +1,11 @@
+package com.CollectionAPI.CollectionFramework.set.Hashset;
+
+import java.util.HashSet;
+
+public class Hashset_Demo1 {
+	public static void main(String[] args) {
+
+		HashSet<Object> hs = new HashSet<>();
+       
+	}
+}

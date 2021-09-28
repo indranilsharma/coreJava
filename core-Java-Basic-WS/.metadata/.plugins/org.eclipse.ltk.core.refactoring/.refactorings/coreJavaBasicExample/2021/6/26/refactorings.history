@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;coreJavaBasicExample/src/com/CollectionFramework/list/arrayList/Manager2.java&apos; to &apos;GenaralCollectionMetod.java&apos;" description="Rename resource &apos;Manager2.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/CollectionFramework/list/arrayList/Manager2.java" name="GenaralCollectionMetod.java" stamp="1624357452330" updateReferences="true"/>
+</session>

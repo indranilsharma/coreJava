@@ -1,0 +1,70 @@
+package com.CollectionAPI.CollectionFramework.set.TreeSet;
+
+import java.util.Comparator;
+import java.util.TreeSet;
+
+public class Compare_TreeSet {
+
+	public static void main(String[] args) {
+
+//		comparator implemented (customazed)
+		TreeSet<Object> t = new TreeSet<>(new MyComparator());
+		t.add(50);
+		t.add(0);
+		t.add(20);
+		t.add(5);
+		System.out.println(t);
+
+//      comparable implemented (Default)
+		TreeSet<Object> ts = new TreeSet<>();
+		ts.add(50);
+		ts.add(0);
+		ts.add(20);
+		ts.add(5);
+		System.out.println(ts);
+	
+		TreeSet<Object> sprots = new TreeSet<>(new MyComparator());
+	
+		sprots.add("hockey");
+		sprots.add("football");
+		sprots.add("tenis");
+		sprots.add("sprint");
+		System.out.println(sprots);
+	
+	}
+}
+
+class MyComparator implements Comparator<Object> {
+
+	@Override
+	public int compare(Object obj1, Object obj2) {
+//		Integer i1 = (Integer) obj1;
+//		Integer i2 = (Integer) obj2;
+		
+		String s1 = (String)obj1;
+		String s2 = (String)obj2;
+		
+//		with the logic 
+//		if (i1 > i2) {
+//			return -1;
+//		} else if (i1 < i2) {
+//			return +1;
+//		} else {
+//			return 0;
+//		}
+		
+//		without logic 
+		
+//      reverse the default sorting order 
+		return - s1.compareTo(s2);
+		
+//		insertion order
+//		return 1;
+		
+//		reverse duplicate order
+//		return -1;
+		
+//		apart form first element all other treat as duplicate
+//		return 0;
+	}
+}

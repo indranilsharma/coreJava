@@ -1,0 +1,32 @@
+package com.CollectionAPI.CollectionFramework.generics;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class UpperBoundedWildcard {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> al1 = new ArrayList<Integer>(Arrays.asList(4, 5, 9, 6, 7));
+		System.out.println(sum(al1));
+		
+//      why not able to add float parameter (even float is also extends Number)
+//      ArrayList<Float> al2 = new ArrayList<Float>(Arrays.asList(4,5,6));
+
+		ArrayList<Double> al3 = new ArrayList<Double>(Arrays.asList(4.1, 5.1, 6.1));
+//      why not able to add Byte parameter (even byte is also extends Number)
+		System.out.println(sum(al3));
+
+//      ArrayList<Byte> al4 = new ArrayList<Byte>();
+	}
+
+	private static double sum(List<? extends Number> list) {
+		System.out.println(list);
+		double sum = 0.0;
+
+		for (Number i : list) {
+			sum += i.doubleValue();
+		}
+		return sum;
+	}
+}

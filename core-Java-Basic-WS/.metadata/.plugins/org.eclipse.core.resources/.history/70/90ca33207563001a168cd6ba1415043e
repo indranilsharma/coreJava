@@ -1,0 +1,10 @@
+package com.Thread.advance.lock;
+
+public class Synchonised_demo_reentarent_lock {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

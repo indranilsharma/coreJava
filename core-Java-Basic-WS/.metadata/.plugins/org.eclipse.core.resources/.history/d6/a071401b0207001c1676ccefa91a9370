@@ -1,0 +1,16 @@
+package com.datatype.Literal.string.StringObject;
+
+public class StringConstantPool3 {
+
+	public static void main(String[] args) {
+		String s1 = new String("You can not change me");
+		String s2 = new String("You can not change me");
+		
+//       after this line 3 obj will be created 2 in the heap area one in the SCP 
+//		 2 time it will not created SCP area because one object already created
+		
+//		false because two object created in heap area  
+		System.out.println(s1 == s2);
+		
+	}
+}

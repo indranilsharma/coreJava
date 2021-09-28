@@ -1,0 +1,10 @@
+package com.Thread.AdvancedMultithreding.Semaphores;
+
+public class SemaphoreCounter {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

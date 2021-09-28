@@ -1,0 +1,17 @@
+package com.StringHandling.StringObject;
+
+final class Demo {
+	public void print() {
+		System.out.println("Hi");
+	}
+}
+
+public class Test {
+
+	public static void main(String[] args) {
+
+//		Demo o = new Demo();
+        //o.print();
+	}
+
+}

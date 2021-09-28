@@ -1,0 +1,15 @@
+package com.Serialization;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+
+public class CustomizedSerialVersionUID_Receiver {
+	public static void main(String[] args) throws IOException, ClassNotFoundException {
+
+		FileInputStream fis = new FileInputStream("cust.txt");
+		ObjectInputStream ois = new ObjectInputStream(fis);
+		CustomizedSerialVersionUID_Class readObject = (CustomizedSerialVersionUID_Class) ois.readObject();
+		System.out.println(readObject.i + " " + readObject.s);
+	}
+}

@@ -1,0 +1,54 @@
+package com.Thread.advance.lock;
+
+class Display_1 {
+
+	// if we make synchronized then only one thread can able to excute at atime
+	public synchronized void wish(String name) {
+		for (int i = 0; i < 10; i++) {
+			System.out.print("Good morning: ");
+			try {
+				Thread.sleep(1000);
+
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			System.out.println(name);
+		}
+	}
+}
+
+class MyThread_1 extends Thread {
+
+	Display_1 d;
+	String name;
+
+	public MyThread_1(Display_1 d, String name) {
+		this.d = d;
+		this.name = name;
+	}
+
+	public void run() {
+		d.wish(name);
+	}
+}
+
+
+
+public class Synchonised_demo_reentarent_lock {
+
+	public static void main(String[] args) {
+ 
+
+		Display_1 d = new Display_1();
+
+		MyThread_1 t1 = new MyThread_1(d, "Jack");
+		MyThread_1 t2 = new MyThread_1(d, "Jill");
+
+		// so both thread want to conquerre the wish() method and get mixed
+		// output
+		t1.start();
+		t2.start();
+		
+	}
+
+}

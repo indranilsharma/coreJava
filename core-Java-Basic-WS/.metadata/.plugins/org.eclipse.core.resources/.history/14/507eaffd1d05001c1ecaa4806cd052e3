@@ -1,0 +1,20 @@
+package com.JavaLang.toSting;
+
+class Student {
+	String name;
+	int id;
+
+	public Student(String name, int id) {
+		super();
+		this.name = name;
+		this.id = id;
+	}
+}
+
+public class ToStringDemo {
+	public static void main(String[] args) {
+		Student s = new Student("Taliban", 101);
+		System.out.println(s);
+		System.out.println(s.toString());
+	}
+}

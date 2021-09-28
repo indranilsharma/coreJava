@@ -1,0 +1,25 @@
+package com.CollectionAPI.CollectionFramework.generics;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class UpperBoundedWildcard {
+
+	public static void main(String[] args) {
+      ArrayList<Integer> al1 = new ArrayList<Integer>(Arrays.asList(4,5,9,6,7));
+      ArrayList<Float> al2 = new ArrayList<Float>();
+      ArrayList<Double> al3 = new ArrayList<Double>(Arrays.asList(4.1,5.1,6.1));
+      ArrayList<Byte> al4 = new ArrayList<Byte>();
+
+	}
+	private static double display(List<? extends Number> list) {
+		System.out.println(list);
+        double sum=0.0;
+
+		for(Number i: list) {
+			 sum+=i.doubleValue();		
+			 }
+	    return sum;
+	}
+}

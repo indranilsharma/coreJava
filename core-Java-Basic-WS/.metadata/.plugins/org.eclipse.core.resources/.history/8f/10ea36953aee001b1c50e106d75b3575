@@ -1,0 +1,11 @@
+package com.CollectionAPI.CollectionFramework.list.linkList;
+
+import java.util.LinkedList;
+
+public class Manager1 {
+	public static void main(String args[]) {
+
+		LinkedList<Object> list = new LinkedList<>();
+		
+	}
+}

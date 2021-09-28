@@ -1,0 +1,25 @@
+package com.Thread.Thread_Method.basic;
+
+class MyManager1Child extends Thread {
+
+	@Override
+	public void run() {
+		for (int i = 0; i < 10; i++) {
+			System.out.println("child : " + i);
+		}
+	}
+}
+
+public class Manager1 {
+
+	public static void main(String[] args) {
+
+		MyManager1Child childThread = new MyManager1Child();
+		childThread.start();
+//can't expect the exact output 
+		for (int i = 0; i < 10; i++) {
+			System.out.println("main thread :" + i);
+		}
+		System.out.println(".......");
+	}
+}

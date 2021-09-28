@@ -1,0 +1,23 @@
+package com.Thread.advance.basic;
+
+class MyDefaultRun extends Thread {
+
+	// if no run method is there thread class default run method will execute with empty implementation
+
+	/*  thread class run method
+	 * @Override public void run() 
+	 * { if (target != null) 
+	 * { target.run(); 
+	 * } }
+	 */
+
+}
+
+public class DefaultRun {
+	public static void main(String[] args) {
+		MyDefaultRun t = new MyDefaultRun();
+		t.start();
+		
+		Thread.currentThread().getName();//no output will come bcz run() not override 
+	}
+}

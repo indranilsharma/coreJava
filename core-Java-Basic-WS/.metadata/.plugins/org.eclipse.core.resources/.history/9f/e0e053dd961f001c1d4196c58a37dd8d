@@ -1,0 +1,18 @@
+package com.Thread.AdvancedMultithreding.excutaorFramework;
+
+static class Task implements Runnable {
+
+	@Override
+	public void run() {
+		try {
+
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+
+}
+
+public class Executor_Interface {
+
+}

@@ -1,0 +1,51 @@
+package com.CollectionFramework.withOutCollections;
+
+import java.util.Iterator;
+
+public class ArrayManager {
+
+	public static void main(String[] args) {
+		// so many number of variable required so we should go for collections API
+		int x = 0;
+		int y = 10;
+
+		Student myArry[] = new Student[100];
+		System.out.println(myArry.length);
+		myArry[0] = new Student(01, "Ronny");
+		myArry[1] = new Student(02, "Jack");
+
+//      only hold homoginous elemnts
+//		 myArry[3] = new Customer();
+
+//		 we can heal this by declare objct type
+		Object myObjArry[] = new Object[5];
+		myObjArry[01] = new Student(03, "Zidan");
+		myObjArry[02] = new Customer(06, "Baby");
+
+		// memory size are wast bcz its fixed
+		for (int i = 0; i < myObjArry.length; i++) {
+			System.out.println(myObjArry.getClass());
+		}
+		System.out.println(myObjArry);
+	}
+}
+
+class Student {
+	int id;
+	String name;
+
+	Student(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+}
+
+class Customer {
+	int id;
+	String name;
+
+	Customer(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+}

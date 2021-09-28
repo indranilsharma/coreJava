@@ -1,0 +1,31 @@
+package com.CollectionFramework.withOutCollections;
+
+public class ArrayManager {
+
+	public static void main(String[] args) {
+		// so many number of variable required so we should go for collections API
+		int x = 0;
+		int y = 10;
+
+		Student myArry[] = new Student[100];
+		System.out.println(myArry.length);
+		myArry[0] = new Student(01, "Ronny");
+		myArry[1] = new Student(02, "Jack");
+		// only hold homoginous elemnts
+		// myArry[3] = new Customer();
+		// memory size are wast bcz its fixed 
+		System.out.println(myArry);
+
+	}
+
+}
+
+class Student {
+	int id;
+	String name;
+
+	Student(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+}

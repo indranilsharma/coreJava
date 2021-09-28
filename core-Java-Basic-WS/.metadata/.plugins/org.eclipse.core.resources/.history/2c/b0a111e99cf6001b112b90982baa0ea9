@@ -1,0 +1,10 @@
+package com.CollectionAPI.CollectionFramework.generics;
+
+import java.util.List;
+
+public class unboundedwildcardemo {
+
+	private static void printList(List<?> list) {
+		System.out.println(list);
+	}
+}

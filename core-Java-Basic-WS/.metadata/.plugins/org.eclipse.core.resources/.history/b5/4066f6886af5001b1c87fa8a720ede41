@@ -1,0 +1,20 @@
+package com.CollectionAPI.CollectionFramework.Queue;
+
+import java.util.PriorityQueue;
+
+public class PriorityBlockingQueue {
+
+	public static void main(String[] args) {
+//		java.util.concurrent.PriorityBlockingQueue<Object> pbq = new java.util.concurrent.PriorityBlockingQueue<>();
+		PriorityQueue<Object> pbq = PriorityQueue<Object>();
+		pbq.offer(1);
+		pbq.offer(2);
+		pbq.offer(3);		
+		pbq.offer(4);
+		pbq.offer(5);
+		pbq.offer(6);
+		
+		System.out.println(pbq);
+	}
+
+}

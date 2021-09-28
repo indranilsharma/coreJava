@@ -1,0 +1,38 @@
+package durgaSoftCoreJava.common.AdvancedMultithreding.ThradLocal;
+
+class ParentThreadDemo extends Thread {
+
+	public static InheritableThreadLocal local = new InheritableThreadLocal() {
+
+		@Override
+		protected Object childValue(Object parentValue) {
+			return "Child Thread";
+		}
+	};
+
+	// static ThreadLocal<String> local = new ThreadLocal<String>();
+
+	public void run() {
+
+		local.set("ParentThread");
+		//local.set("PP");
+		System.out.println("Current Thread name :" + local.get());
+		ChildTheradDemo c = new ChildTheradDemo();
+		c.start();
+	}
+}
+
+class ChildTheradDemo extends Thread {
+
+	public void run() {
+		// by-default parent name not reflect to child
+		System.out.println("Child name :" + ParentThreadDemo.local.get());
+	}
+}
+
+public class InheritableThreadLocalDemo {
+	public static void main(String[] args) {
+		ParentThreadDemo demo = new ParentThreadDemo();
+		demo.start();
+	}
+}

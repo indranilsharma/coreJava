@@ -1,0 +1,10 @@
+package com.datatype.Literal.string.OCAJP_String;
+
+public class Mask_Credit_Card {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

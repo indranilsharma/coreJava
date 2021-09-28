@@ -1,0 +1,9 @@
+package com.CollectionAPI.CollectionFramework.set.TreeSet;
+
+public class Compare_TreeSet {
+
+	public static void main(String[] args) {
+
+	}
+
+}

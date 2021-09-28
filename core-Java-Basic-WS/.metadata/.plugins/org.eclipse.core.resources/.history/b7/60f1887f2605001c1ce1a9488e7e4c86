@@ -1,0 +1,18 @@
+package com.JavaLang.hasCode;
+
+public class HashCodeDemo_Override {
+	int id;
+	
+	public HashCodeDemo_Override(int id) {
+		this.id = id;
+	}
+	@Override
+	public int hashCode() {
+		int encryId = (id*2)%4;
+		return encryId;
+	}
+	public static void main(String[] args) {
+		HashCodeDemo_Override o = new HashCodeDemo_Override(102);
+		System.out.println(o.toString());
+	}
+}

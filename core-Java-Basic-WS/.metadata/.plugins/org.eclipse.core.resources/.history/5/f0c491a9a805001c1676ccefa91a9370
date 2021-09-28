@@ -1,0 +1,12 @@
+package com.StringHandling.StringObject;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		String s = new String("Ka/bul");
+//		this object eligible for gc()
+		s.concat("Afganistan");
+		System.out.println(s);
+	}
+}

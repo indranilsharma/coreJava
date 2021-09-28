@@ -1,0 +1,40 @@
+package com.CollectionAPI.CollectionFramework.Iterators.Enumeration;
+
+import java.util.Enumeration;
+import java.util.Hashtable;
+
+public class Enumeration_Demo1 {
+
+	public static void main(String[] args) {
+
+		Hashtable<Object, Object> ht = new Hashtable<>();
+
+		ht.put(1, "Ind");
+		ht.put(2, "Pak");
+		ht.put(3, "Sl");
+		System.out.println(ht);
+
+		Enumeration<Object> e = ht.elements();
+
+		while (e.hasMoreElements()) {
+
+			System.out.println(e.nextElement());
+		}
+
+		System.out.println("----------");
+
+		Hashtable<Object, Object> ht1 = new Hashtable<>();
+
+		ht1.put("Name", "Rohan");
+		ht1.put("Age", "23");
+		ht1.put("Address", "India");
+		ht1.put("Article", "GeeksforGeeks");
+
+		Enumeration<Object> e1 = ht1.keys();
+
+		while (e1.hasMoreElements()) {
+			String keys = (String) e1.nextElement();
+			System.out.println(keys +" :"+ht1.get(keys));
+		}
+	}
+}

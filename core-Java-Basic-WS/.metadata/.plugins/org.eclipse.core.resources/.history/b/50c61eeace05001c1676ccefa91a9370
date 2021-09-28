@@ -1,0 +1,40 @@
+package com.datatype.Literal.string.StringObject;
+
+public class Test {
+	private int i;
+
+	Test(int i) {
+		this.i = i;
+	}
+
+	public Test modify(int i) {
+		if (this.i == i) {
+			return this;
+		} else {
+			return new Test(i);
+		}
+	}
+
+	public static void main(String[] args) {
+
+		String s = new String("Kabul");
+		String s1 = new String("Kabul");
+
+//		it is for reference comparison
+		System.out.println(s == s1);
+//		it is for content comparison in string class
+//		in object class equals method are for reference comparison
+		System.out.println(s.equals(s1));
+
+//		this object eligible for gc()
+		s.concat("Afganistan");
+		System.out.println(s);
+		
+		Test i1 = new Test(100);
+		Test i2 = i1.modify(10);
+		Test i3 = i1.modify(10);
+		
+		System.out.println(i1 == i2);
+		System.out.println(i1 == i3);
+	}
+}

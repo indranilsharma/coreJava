@@ -1,7 +1,0 @@
-package com.java8newfeature.common.lamdaExpretion;
-
-public class LamdaWithComparator {
-	public static void main(String[] args) {
-
-	}
-}

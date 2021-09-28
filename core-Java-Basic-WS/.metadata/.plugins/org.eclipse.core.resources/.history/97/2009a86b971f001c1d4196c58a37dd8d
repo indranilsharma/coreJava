@@ -1,0 +1,23 @@
+package com.Thread.AdvancedMultithreding.excutaorFramework;
+
+import java.util.concurrent.TimeUnit;
+
+class Task implements Runnable {
+
+	@Override
+	public void run() {
+		try {
+			Long duration = (long) (Math.random() * 5);
+			System.out.println("Running Task!");
+			TimeUnit.SECONDS.sleep(duration);
+			System.out.println("Task Completed");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}
+
+public class Executor_Interface {
+
+}

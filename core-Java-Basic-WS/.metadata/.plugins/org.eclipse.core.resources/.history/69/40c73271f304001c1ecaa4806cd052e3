@@ -1,0 +1,10 @@
+package com.memoryCollection.GarbageCollection;
+
+public class RuntimeDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

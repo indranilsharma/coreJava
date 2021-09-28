@@ -1,0 +1,15 @@
+package com.memoryCollection.GarbageCollection;
+
+public class FinalizedDemo {
+
+	public static void main(String[] args) {
+		String s = new String("India");
+		s = null;
+		System.gc();
+		System.out.println(Runtime.getRuntime().freeMemory());
+	}
+	public void finalize() {
+		System.out.println("finalize method called ");
+	}
+
+}

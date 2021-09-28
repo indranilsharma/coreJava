@@ -1,0 +1,29 @@
+package com.Thread.Thread_Method.sleepDemo;
+
+class MySleepingIntruppt extends Thread {
+	@Override
+	public void run() {
+		try {
+			for (int i = 0; i < 5; i++) {
+				System.out.println("child thread start");
+				Thread.sleep(2000);
+				System.out.println("child thread end"); //never will execute
+
+			}
+		} catch (InterruptedException e) {
+			System.out.println("i got inttrupt");
+		}
+	}
+}
+
+public class SleepingIntruppt {
+
+	public static void main(String[] args) {
+		System.out.println(Thread.currentThread().getName());
+		MySleepingIntruppt t = new MySleepingIntruppt();
+		t.start();
+		t.interrupt();
+		System.out.println("end of main");
+	}
+
+}

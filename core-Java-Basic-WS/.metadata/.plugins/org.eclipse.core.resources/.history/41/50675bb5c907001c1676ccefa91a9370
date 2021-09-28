@@ -1,0 +1,11 @@
+package com.datatype.Literal.string.OCAJP_String;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		String s = new String("Kasmir");
+//		 automatically applicable for garbage collection
+		s.concat("Heaven");
+		System.out.println(s);
+	}
+}

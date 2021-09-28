@@ -1,0 +1,9 @@
+package com.CollectionAPI.CollectionFramework.Queue;
+
+public class PriorityBlockingQueue {
+
+	public static void main(String[] args) {
+
+	}
+
+}

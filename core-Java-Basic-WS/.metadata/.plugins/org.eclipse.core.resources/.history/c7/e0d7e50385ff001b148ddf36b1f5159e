@@ -1,0 +1,14 @@
+package com.ExceptionHandling;
+
+import java.io.PrintWriter;
+
+public class CheckedException {
+
+	public static void main(String[] args) {
+//		 without try catch Unhandled exception type FileNotFoundException
+//		it should be checked at compile time 
+		PrintWriter pw = new PrintWriter("");
+		pw.println("");
+	}
+
+}

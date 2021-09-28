@@ -1,0 +1,49 @@
+package com.Thread.AdvancedMultithreding.excutaorFramework;
+
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+
+class MyFutureTask implements Runnable {
+	String name;
+
+	MyFutureTask(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public void run() {
+		System.out.println("Future thread");
+	}
+}
+
+public class ExecutorService_Interface_Future {
+
+	public static void main(String[] args) throws InterruptedException, ExecutionException {
+		
+		MyFutureTask[] tasks = {
+				new MyFutureTask("A"),
+				new MyFutureTask("B"),
+				new MyFutureTask("C"),
+				new MyFutureTask("D")
+				};
+		
+		ExecutorService service = Executors.newFixedThreadPool(4);
+		for (MyFutureTask myFutureTask : tasks) {
+			Future<String> future = (Future<String>) service.submit(myFutureTask);
+			System.out.println(future.get());
+		}
+	
+//		System.out.println(future.get());
+//
+//		if (future.isDone() && !future.isCancelled()) {
+//			try {
+//				System.out.println(future.get());
+//			} catch (InterruptedException | ExecutionException e) {
+//				e.printStackTrace();
+//			}
+//		}
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.Thread.AdvancedMultithreding.ThreadGroup;
+
+public class ThreadGroupDemo2 {
+	public static void main(String[] args) {
+
+//		 system is the parent
+		System.out.println(Thread.currentThread().getThreadGroup().getParent().getName());
+
+		ThreadGroup group1 = new ThreadGroup("first group");
+//		parent group is parent
+		System.out.println(group1.getParent().getName());
+
+//		creating a child group of first thread group
+		ThreadGroup group2 = new ThreadGroup(group1, "Second group");
+		System.out.println(group2.getParent().getName());
+	}
+}

@@ -1,0 +1,30 @@
+package com.datatype.Literal.string.StingBuffer;
+
+public class StringBufferDemo2 {
+
+	public static void main(String[] args) {
+		 StringBuffer sbnew = new StringBuffer("India");
+		
+//		if empty constructor it will be 16 default 
+		StringBuffer sbdefault = new StringBuffer();
+		System.out.println(sbdefault.capacity());
+		
+//		even though final we can change in the same object 
+//		but not in the reassignment  
+		sbnew.append("Taliban");
+		System.out.println(sbnew);
+
+//		The final local variable sb cannot be assigned.
+//		It must be blank and not using a compound assignment
+//		sb = new StringBuffer("Not possible");
+
+//		initial capacity 21--upto this we add 21 char
+		sbnew.append("abcdefghi");
+		System.out.println("sbnew " + sbnew);
+		System.out.println(sbnew.capacity());
+		
+//		if i add single char it will become 21*2+2=44
+		sbnew.append("A");
+		System.out.println(sbnew+ "   "+sbnew.capacity());
+	}
+}

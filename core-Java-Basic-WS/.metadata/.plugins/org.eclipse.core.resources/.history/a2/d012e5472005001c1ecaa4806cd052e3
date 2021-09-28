@@ -1,0 +1,14 @@
+package com.JavaLang.toSting;
+
+import java.util.ArrayList;
+
+public class ToStringDemo2 {
+	public static void main(String[] args) {
+		String s = new String("India");
+		System.out.println(s);
+		Integer i = new Integer(100);
+		System.out.println(i);
+		ArrayList<Integer> al = new ArrayList<>();
+		
+	}
+}

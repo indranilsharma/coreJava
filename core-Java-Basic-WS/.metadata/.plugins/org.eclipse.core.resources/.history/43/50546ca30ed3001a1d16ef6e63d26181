@@ -1,0 +1,21 @@
+package com.memoryCollection.staticMemory;
+
+public class Test {
+  public void name() {
+	System.out.println("base");
+}
+}
+class Test1 extends Test{
+@Override
+public void name() {
+	System.out.println("derived");
+}
+}
+class Main{
+	public static void main(String[] args) {
+		Test o = new Test1();
+		Test1 o1= new Test1();
+	    o.name();
+	    o1.name();
+	}
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pat:Patient xmlns:pat="http://www.bharatthippireddy.com/Patient" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.bharatthippireddy.com/Patient Patient.xsd ">
+  <pat:id>2</pat:id>
+  <pat:name>Rony</pat:name>
+  <pat:age>12</pat:age>
+  <pat:dob>2001-01-01</pat:dob>
+  <pat:email>ddd</pat:email>
+  <pat:gender>M</pat:gender>
+  <pat:phone>9836378821</pat:phone>
+</pat:Patient>

@@ -1,0 +1,14 @@
+package com.Serialization;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
+public class CustomizedSerialVersionUIDSender {
+	public static void main(String[] args) throws IOException {
+		CustomizedSerialVersionUIDClass obj = new CustomizedSerialVersionUIDClass();
+		FileOutputStream fos = new FileOutputStream("cust.txt");
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+		oos.writeObject(obj);
+	}
+}

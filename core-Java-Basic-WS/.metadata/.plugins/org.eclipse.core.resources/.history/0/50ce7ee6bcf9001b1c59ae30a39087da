@@ -1,0 +1,23 @@
+package com.Thread.basic;
+
+class Thread_1 extends Thread {
+
+	public void run() {
+		for (int i = 0; i < 10; i++) {
+			System.out.println(Thread.currentThread() + " Child: " + i);
+		}
+	}
+}
+
+// we can't expect the output of the order
+public class Manager2 {
+
+	public static void main(String[] args) {
+		Thread_1 thread_1 = new Thread_1();
+		thread_1.start();
+
+		for (int i = 0; i < 10; i++) {
+			System.out.println(Thread.currentThread() + " Main :" + i);
+		}
+	}
+}

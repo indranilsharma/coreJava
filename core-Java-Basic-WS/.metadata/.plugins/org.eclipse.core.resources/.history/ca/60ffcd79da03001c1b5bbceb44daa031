@@ -1,0 +1,11 @@
+package com.Serialization;
+
+import java.io.Externalizable;
+
+public class ExternalizationDemo implements Externalizable {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

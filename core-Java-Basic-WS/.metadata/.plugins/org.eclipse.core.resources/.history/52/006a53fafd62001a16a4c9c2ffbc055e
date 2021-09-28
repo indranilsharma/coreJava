@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pat:Patient xmlns:pat="http://www.bharatthippireddy.com/Patient"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.bharatthippireddy.com/Patient Patient.xsd ">
+
+	<pat:id>9</pat:id>
+	<pat:name>Jackeyddd</pat:name>
+	<pat:age>12</pat:age>
+	<pat:dob>2010-01-01</pat:dob>
+	<pat:email>j@gmail.com</pat:email>
+	<pat:gender>H</pat:gender>
+	<pat:phone>9836378816</pat:phone>
+
+</pat:Patient>

@@ -1,0 +1,43 @@
+package com.datatype.Literal.string.StringObject;
+
+public class StringConstantPool3 {
+
+	public static void main(String[] args) {
+		String s1 = new String("You can not change me");
+		String s2 = new String("You can not change me");
+
+//       after this line 3 obj will be created 2 in the heap area one in the SCP 
+//		 2 time it will not created SCP area because one object already created
+
+//		false because two object created in heap area  
+		System.out.println(s1 == s2);
+
+//		 new object will not created because its already present in SCP
+		String s3 = "You can not change me";
+		System.out.println(s1 == s3);
+
+//		 no new objcet will be created in SCP
+		String s4 = "You can not change me";
+//		 true because pointing same object
+		System.out.println(s3 == s4);
+
+//		 no object will be created in SCP because both are constant add in runtime
+		String s5 = "You can not" + "change me";
+//		true because both are constant add in runtime pointing to same object 
+		System.out.println(s3 == s5);
+
+//		one object will created in SCP 
+		String s6 = "You can not";
+		
+//		2 object will created on heap and one in SCP("change me")
+		String s7 = s6 + "change me";
+		System.out.println(s3 == s7);
+		
+		final String s8 = "You can not";
+		String s9 = s8 + "change me";
+		
+		System.out.println(s3 == s9);
+		System.out.println(s6 == s8);
+		
+	}
+}

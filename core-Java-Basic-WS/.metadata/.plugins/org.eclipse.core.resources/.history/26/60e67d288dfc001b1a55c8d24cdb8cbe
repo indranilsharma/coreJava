@@ -1,0 +1,49 @@
+package durgaSoftCoreJava.common.AdvancedMultithreding.ThradLocal;
+
+class MyLocalDemo extends Thread {
+
+	private static Integer custId =0;
+
+	private static ThreadLocal<Integer> local = new ThreadLocal<Integer>() {
+
+		@Override
+		protected Integer initialValue() {
+			return ++custId;
+		}
+	};
+
+	public MyLocalDemo(String name) {
+		super(name);
+	}
+
+	public void run() {
+    /*    try {
+			Thread.sleep(1000);*/
+			System.out.println(Thread.currentThread().getName() 
+					+ " Customer thread with name with custId :" + local.get());
+	/*	} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	*/	
+	}
+}
+
+public class ThreadLocalSeparateCopy {
+
+	public static void main(String[] args) {
+		
+		MyLocalDemo c1 = new MyLocalDemo("AAA");
+		MyLocalDemo c2 = new MyLocalDemo("BBB");
+		MyLocalDemo c3 = new MyLocalDemo("CCC");
+		MyLocalDemo c4 = new MyLocalDemo("DDD");
+		MyLocalDemo c5 = new MyLocalDemo("EEE");
+
+		c1.start();
+		c2.start();
+		c3.start();
+		c4.start();
+		c5.start();
+
+	}
+
+}

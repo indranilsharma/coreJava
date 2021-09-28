@@ -1,0 +1,47 @@
+package com.CollectionAPI.CollectionFramework.Queue;
+
+import java.util.Iterator;
+import java.util.PriorityQueue;
+import java.util.Queue;
+
+public class QueueDemo {
+	public static void main(String[] args) {
+		Queue<Object> pq = new PriorityQueue<>();
+
+		pq.offer("SL");
+		pq.add("Charcole");
+		pq.add("water color");
+		pq.add("Geeks");
+		pq.add("For");
+		pq.add("Geeks");
+		pq.add("Ind");
+		pq.add("Pak");
+		pq.add("Taki");
+
+//      duplicate item can add
+		pq.add("water color");
+
+		System.out.println(pq);
+
+//		return top 
+		System.out.println("peek :" + pq.peek());
+
+		pq.remove();
+		pq.poll();
+		pq.remove("water color");
+
+//	it will give the [] in case of empty list empty list 
+		pq.poll();
+//	 it will give the NoSuchElementException 
+//		pq.remove();
+//	 it will give the NoSuchElementException if list empty
+
+		System.out.println("element : " + pq.element());
+		System.out.println(pq);
+
+		Iterator<Object> itr = pq.iterator();
+		while (itr.hasNext()) {
+			System.out.println(itr.next());
+		}
+	}
+}

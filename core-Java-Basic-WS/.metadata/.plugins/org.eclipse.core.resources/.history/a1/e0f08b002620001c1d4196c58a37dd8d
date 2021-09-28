@@ -1,0 +1,47 @@
+package com.Thread.AdvancedMultithreding.excutaorFramework;
+
+import java.util.Date;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+
+class RunnableTask  extends Thread {
+
+	private final String taskName;
+
+	public RunnableTask (String taskName) {
+		this.taskName = taskName;
+	}
+
+	@Override
+	public void run() {
+		System.out.println(Thread.currentThread().getName()+ taskName 
+				+ " Start Time for " + new Date());
+		try {
+			Thread.sleep(10000);
+			System.out.println(Thread.currentThread().getName()+ taskName 
+					+ " End Time for " + new Date());
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public String tostString() {
+		return this.taskName;
+	}
+}
+
+public class ExecutorFramwork_ScheduledThreadPool {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		ScheduledExecutorService scheduledExecutorService = Executors.newScheduledThreadPool(3);
+		for (int i = 0; i < 10; i++) {
+			RunnableTask task = new RunnableTask(" Task "+i);
+			scheduledExecutorService.schedule(task, 5, TimeUnit.SECONDS);
+		}
+		Thread.sleep(10000);
+		scheduledExecutorService.shutdown();
+		System.out.println("Completed all threads");
+	}
+}

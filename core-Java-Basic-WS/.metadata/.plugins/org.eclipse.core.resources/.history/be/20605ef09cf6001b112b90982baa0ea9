@@ -1,0 +1,22 @@
+package com.CollectionAPI.CollectionFramework.generics;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class unboundedwildcardemo {
+
+	public static void main(String[] args) {
+		ArrayList<Double> al1 = new ArrayList<Double>(Arrays.asList(1.1, 44.5, 5.5));
+		ArrayList<Integer> al2 = new ArrayList<Integer>(Arrays.asList(1, 55, 358, 45));
+		ArrayList<String> al3 = new ArrayList<String>(Arrays.asList("IND", "SL", "PAK"));
+		
+		printList(al1);
+		printList(al2);
+		printList(al3);
+	}
+
+	private static void printList(List<?> list) {
+		System.out.println(list);
+	}
+}

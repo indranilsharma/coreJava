@@ -1,0 +1,19 @@
+package com.ExceptionHandling;
+
+public class DefaultExceptionHandlerDemo2 {
+
+	public static void main(String[] args) {
+		dostuff();
+		System.out.println(10/0);
+	}
+
+	private static void dostuff() {
+		doMoreStuff();
+	}
+
+	private static void doMoreStuff() {
+
+		System.out.println("India");
+	}
+
+}

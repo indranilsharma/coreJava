@@ -1,0 +1,25 @@
+package com.operators.booleanOperators;
+/*
+ * Operator > returns a boolean value. 5 is not greater than 6 therefore false is returned.
+*/
+
+/**
+ * Ternary operator ?: assigns left of ‘:’ if condition is true and right hand of ‘:’ if condition is false. 
+ * true ?: false
+A         B             A|B       A&B      A^B      !A
+false     false         false     false    false    true
+true      false         true      false    true     false
+false     true          true      false    true     true
+true      true          true      true     false    false
+ */
+
+public class Manager8 {
+	 public static void main(String args[]) 
+     {        
+          int x = 3;
+          int y = ~ x;//-4
+          int z;
+          z = x > y ? x : y;//x: return x value 
+          System.out.print("z=" +z+" y="+y);
+     } 
+}

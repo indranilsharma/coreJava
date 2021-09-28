@@ -1,0 +1,13 @@
+package com.StringHandling.StringObject;
+
+public class StringConstantPool {
+
+	public static void main(String[] args) {
+//		two object will be created --one in heap area and one in string content pool 
+		String s = new String("Kajakistan");
+//		only one object will be created string consent pool 
+//		before creation of any new object it will first check in StringConstentPool (SCP) area  
+//		All Scp area will be delete before JVM or server shutdown 
+		String s1 = "Kabul";
+	}
+}

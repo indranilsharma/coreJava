@@ -1,0 +1,7 @@
+package com.memoryCollection.staticMemory;
+
+public class Test {
+  static{
+	  System.out.println("hi");
+  }
+}

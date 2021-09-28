@@ -1,0 +1,24 @@
+package com.CollectionAPI.CollectionFramework.list.linkList;
+
+import java.util.Iterator;
+import java.util.*;
+
+public class Manager2 {
+	public static void main(String args[]) {
+
+		LinkedList<Object> list = new LinkedList<>(); 
+		list.add(new Integer(2)); 
+		list.add(new Integer(8));
+		list.add(new Integer(5));
+		list.add(new Integer(1));
+
+		Iterator<Object> i = list.iterator();
+
+        System.out.println(list);
+		Collections.reverse(list);
+        System.out.println(list);
+		
+		while (i.hasNext())
+			System.out.print(i.next() + " ");
+	}
+}

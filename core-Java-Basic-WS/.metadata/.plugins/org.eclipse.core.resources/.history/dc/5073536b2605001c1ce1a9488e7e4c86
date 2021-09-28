@@ -1,0 +1,9 @@
+package com.JavaLang.hasCode;
+
+public class HashCodeDemo_Override {
+
+	public static void main(String[] args) {
+		HashCodeDemo_Override o = new HashCodeDemo_Override();
+		System.out.println(o.hashCode());
+	}
+}

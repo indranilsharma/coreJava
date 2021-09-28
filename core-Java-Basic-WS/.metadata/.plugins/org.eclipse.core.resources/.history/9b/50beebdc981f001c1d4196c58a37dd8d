@@ -1,0 +1,32 @@
+package com.Thread.AdvancedMultithreding.excutaorFramework;
+
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
+class Task implements Runnable {
+
+	@Override
+	public void run() {
+		try {
+			Long duration = (long) (Math.random() * 5);
+			System.out.println("Running Task!");
+//			TimeUnit.SECONDS.sleep(duration);
+			System.out.println("Task Completed in " + duration+"s");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
+
+public class Executor_Interface {
+	public static void main(String[] args) {
+//		executor interface call
+		Executor executor = Executors.newCachedThreadPool();
+//	new task execute()
+		executor.execute(new Task());
+		ThreadPoolExecutor pool = (ThreadPoolExecutor) executor;
+		pool.shutdown();
+	}
+}

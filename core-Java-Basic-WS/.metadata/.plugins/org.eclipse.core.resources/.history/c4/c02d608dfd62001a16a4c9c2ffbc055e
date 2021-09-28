@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.bharatthippireddy.com/Patient"
+	xmlns:pat="http://www.bharatthippireddy.com/Patient"
+	elementFormDefault="qualified">
+
+	<element name="Patient" type="pat:Patient" />
+
+	<complexType name="Patient">
+		<sequence>
+			<element name="id" type="pat:ID" />
+			<element name="name" type="pat:String15Length" />
+			<element name="age" type="int" />
+			<element name="dob" type="date" />
+			<element name="email" type="string" />
+			<element name="gender" type="string" />
+			<element name="phone" type="string" />
+		</sequence>
+	</complexType>
+
+	<simpleType name="ID">
+		<restriction base="int">
+			<pattern value="[0-5]"></pattern>
+		</restriction>
+	</simpleType>
+
+	<simpleType name="String15Length">
+		<restriction base="string">
+			<maxLength value="15" />
+		</restriction>
+	</simpleType>
+
+
+</schema>

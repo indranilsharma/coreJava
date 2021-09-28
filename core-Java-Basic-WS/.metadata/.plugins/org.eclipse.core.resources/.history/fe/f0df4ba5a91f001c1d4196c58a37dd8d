@@ -1,0 +1,47 @@
+package com.Thread.AdvancedMultithreding.excutaorFramework;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+class PrintableJob implements Runnable {
+
+	String name;
+
+	public PrintableJob(String name) {
+//		super();
+		this.name = name;
+	}
+
+	@Override
+	public void run() {
+		System.out.println(name + " Thread start " + Thread.currentThread().getName());
+		try {
+			Thread.sleep(2000);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		System.out.println(name + " Thread closed " + Thread.currentThread().getName());
+	}
+}
+
+public class ExcutaorService_Interface_FixedThreadPool {
+
+	public static void main(String[] args) {
+
+		PrintableJob[] jobs = { 
+				new PrintableJob("A"),
+				new PrintableJob("B"), 
+				new PrintableJob("C"),
+				new PrintableJob("D"),
+				new PrintableJob("E"),
+				new PrintableJob("F")};
+		
+		ExecutorService service = Executors.newFixedThreadPool(4);
+		
+//		thread.start() not starting all done by executor framework 
+		for (PrintableJob printableJob : jobs) {
+			service.submit(printableJob);
+		}
+		service.shutdown();
+	}
+}

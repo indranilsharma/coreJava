@@ -1,0 +1,37 @@
+package com.Thread.Thread_Method.wait_notify;
+
+class ThredWait extends Thread {
+	int total = 0;
+
+	@Override
+	public void run() {
+//		child thread performing updation 
+		synchronized (this) {
+//			2----child thread ready to calculate
+			System.out.println("child thread start to calculate ");
+			for (int i = 1; i <= 10; i++) {
+				total = total + i;
+			}
+//			3---child thread notify main thread my work done 
+			System.out.println("child thread start to notify ");
+			this.notify();
+		}
+	}
+}
+
+public class WaitDemo {
+	public static void main(String[] args) throws InterruptedException {
+		ThredWait t = new ThredWait();
+		t.start();
+//		main thread expecting updation 
+		synchronized (t) {
+//			1---main thread going to wait
+			System.out.println("mainthread try to call wait()");
+			t.wait();
+//			4---main thread got notifications 
+			System.out.println("main thread got notifications ");
+//			5--final flow will come over here 
+			System.out.println(t.total);
+		}
+	}
+}

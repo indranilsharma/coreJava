@@ -1,0 +1,9 @@
+package com.JavaLang.toSting;
+class Student {
+	String name;
+	int id;
+	
+}
+public class ToStringDemo {
+
+}

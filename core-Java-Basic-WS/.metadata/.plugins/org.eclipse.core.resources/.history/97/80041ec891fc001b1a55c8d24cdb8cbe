@@ -1,0 +1,35 @@
+package com.Thread.AdvancedMultithreding.ThradLocal;
+
+class ParentThread extends Thread {
+	
+	//if we change InheritableThreadLocal then parent update value will be re 
+	
+	static InheritableThreadLocal<String> local = new InheritableThreadLocal<>();
+
+	
+	//static ThreadLocal<String> local = new ThreadLocal<String>();
+
+	public void run() {
+
+		local.set("ParentThread");
+		System.out.println("Current Thread name :"+local.get());
+		ChildTherad c = new ChildTherad();
+         c.start();
+	}
+}
+
+
+class ChildTherad extends Thread{
+	
+	public void  run() {
+		//by-default parent name not reflect to child 
+		System.out.println("Child name :"+ParentThread.local.get());
+	}
+}
+
+public class ParentChildDemo {
+	public static void main(String[] args) {
+       ParentThread thread = new ParentThread();
+       thread.start();
+	}
+}

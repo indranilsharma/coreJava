@@ -1,0 +1,24 @@
+package com.Thread.AdvancedMultithreding.excutaorFramework;
+
+public class Executor_ThreadFactory {
+	private int threadId;
+    private String name;
+
+    public Executor_ThreadFactory(String name) {
+        threadId = 1;
+        this.name = name;
+    }
+
+    public Thread newThread(Runnable r) {
+        Thread t = new Thread(r, name + "-Thread_" + threadId);
+        LOG.info("created new thread with id : " + threadId +
+            " and name : " + t.getName());
+        threadId++;
+        return t;
+    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

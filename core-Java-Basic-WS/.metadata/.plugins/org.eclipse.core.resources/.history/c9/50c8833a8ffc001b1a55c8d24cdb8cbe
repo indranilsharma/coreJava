@@ -1,0 +1,12 @@
+package com.Thread.AdvancedMultithreding.ThradLocal;
+
+public class ThradLocalDemo {
+	public static void main(String[] args) {
+		ThreadLocal<String> local = new ThreadLocal<>();
+		System.out.println(local.get());
+		local.set("A");
+		System.out.println(local.get());
+		local.remove(); //after remove in
+		System.out.println(local.get());
+	}
+}

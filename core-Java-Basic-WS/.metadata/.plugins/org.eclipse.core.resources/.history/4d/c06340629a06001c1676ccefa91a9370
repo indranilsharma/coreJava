@@ -1,0 +1,10 @@
+package com.datatype.Literal.string.StingBuffer;
+
+public class StringBufferDemo2 {
+
+	public static void main(String[] args) {
+		final StringBuffer sb = new StringBuffer("India");
+		sb.append("Taliban");
+		System.out.println(sb);
+	}
+}
